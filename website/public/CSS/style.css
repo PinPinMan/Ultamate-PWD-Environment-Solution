@@ -1,0 +1,33 @@
+body {
+    font-family: 'Bagel Fat One', system-ui;
+    font-family: sans-serif;
+    background-image: url('../Images//background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-weight: 700;
+}
+h5{
+    font-weight: 900;
+}
+main {
+    min-height: calc(100vh - 56px - 56px);
+}
+#logo{
+    width: 10%;
+    height: auto;
+}
+
+.background{
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(2.3px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.font{
+    font-family: 'Bagel Fat One', system-ui;
+    font-weight: 200;
+}

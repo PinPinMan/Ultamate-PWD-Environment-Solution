@@ -1,0 +1,142 @@
+#centerText{
+    font-size: 8vw;
+    z-index: 1;
+    font-weight: 1000;
+    position: absolute;
+    font-family: 'Bagel Fat One', system-ui;
+    left: 25%;
+    top: 20%;
+}
+
+#startbutton{
+	position: relative;
+  	top: -3rem;
+	font-size: 3em;
+}
+
+#player{
+    width: 600px;
+    height: auto;
+    transform: scale(1);
+    animation: pulsePlayer 2s infinite;
+    position: absolute;
+    left: 45vw;
+    top: 7vw;
+}
+
+@keyframes pulsePlayer {
+	0% {
+        transform: translateY(0);
+		transform: scale(0.95);
+        transform: rotate(-5deg);
+	}
+
+	70% {
+        transform: translateY(-4em);
+		transform: scale(1.1);
+        transform: rotate(5deg);
+	}
+
+	100% {
+        transform: translateY(4em);
+		transform: scale(0.95);
+        transform: rotate(-5deg);
+	}
+}
+
+.blob {
+	background: black;
+	border-radius: 50%;
+	margin: 10px;
+	height: 20px;
+	width: 20px;
+}
+.blob {
+	background: black;
+	border-radius: 50%;
+	margin: 10px;
+	height: 20px;
+	width: 20px;
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	
+}
+
+
+#blob1 {
+position: absolute;
+left: 70%;
+top: 70%;
+animation: pulse1 2s infinite;
+}
+#blob2 {
+position: absolute;
+left: 45%;
+top: 50%;
+animation: pulse2 2s infinite;
+}
+#blob3 {
+position: absolute;
+left: 50%;
+top: 20%;
+animation: pulse3 2s infinite;
+}
+
+@keyframes pulse1 {
+	0% {
+		transform: scale(0.95);
+        transform: translateY(1em);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1.4);
+        transform: translateY(-1em);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+        transform: translateY(1em);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+@keyframes pulse2 {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+        transform: translateX(-1em);
+	}
+
+	70% {
+		transform: scale(1.4);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+        transform: translateX(1em);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        transform: translateX(-1em);
+	}
+}
+@keyframes pulse3 {
+	0% {
+		transform: scale(0.95);
+        transform: translateX(-0.6em);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1.4);
+        transform: translateX(0.6em);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+        transform: translateX(-0.6em);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
